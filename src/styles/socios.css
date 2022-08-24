@@ -1,0 +1,69 @@
+.tituloSocios {
+    justify-content: center;
+    text-align: center;
+    color:#282940;
+    font-family: tahoma;
+    font-size: 40px;
+    margin: 20px;
+}
+
+.horarios {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.horariosSocios {
+    height: 40%;
+    width: 60%;
+    background-color: #282940;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tituoHorarios {
+    padding-top: 15px;
+    color: #f39608;
+    font-family: verdana;
+}
+
+
+.titulosSecundarios {
+    color: white;
+    font-family: arial;
+    padding: 15px;
+}
+
+.registrarse {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.registraseSocio {
+    height: 40%;
+    width: 60%;
+    background-color: #f39608;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.socioInfo {
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+
+.socioInformacion {
+    height: 40%;
+    width: 60%;
+    background-color: #f39608;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.btnEnviar {
+    margin: 5px;
+}
