@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import "../styles/footer.css";
 import ImgBancoPampa from "../images/bancoPampa.png";
@@ -8,6 +10,7 @@ import ImgEscudo from "../images/logoFooter.png";
 import ImgFacebook from "../images/icono-facebook.jpg";
 import ImgInstragram from "../images/icono-instagram.jpg";
 import ImgUbicacion from "../images/icono-ubicacion.jpg";
+
 
 const Footer = () => {
     return (

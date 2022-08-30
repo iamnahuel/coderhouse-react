@@ -27,12 +27,16 @@
     top: 0px;
     z-index: 10;
     background-color: #02236D;
+    
 }
 
 .navBarMenu {
     background-color: #02236D;
     color: white;
+    display: flex;
+    
 }
+
 
 .nav-item {
     font-weight: bold;
@@ -41,4 +45,14 @@
 
 .nav-item:hover {
     background-color: #f39608;
+}
+.carrito{
+    width: 40px;
+    height: 40px;
+    margin-left: 80%;
+}
+.carrito:hover{
+    background-color: #f39608;
+    border-radius: 100%;
+    cursor: pointer;
 }
