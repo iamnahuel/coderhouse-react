@@ -9,18 +9,10 @@ import ItemListContainer from './components/ItemListContainer';
 function App() {
   return (
     <div className="container-fluid main">
-      <div className='header'>
-        <Header />
-      </div>
-      <dic>
-        <ItemListContainer />
-      </dic>
-      <div>
-        <Socios />
-      </div>
-      <div>
-        <Footer />
-      </div>
+      <Header />
+      <ItemListContainer />
+      <Socios />
+      <Footer />
     </div>
   );
 }
