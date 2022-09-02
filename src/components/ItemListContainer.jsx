@@ -1,9 +1,15 @@
 import React from "react";
+import ItemCount from "./ItemCount";
+import "../styles/itemListContainer.css";
+
 
 const ItemListContainer = () => {
-    return(
+    return (
         <>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo nihil non esse omnis accusantium corporis consectetur facilis quam dolorum a cupiditate, consequatur praesentium ratione amet minus illo rem totam ex.</p>
+            <div className="productos">
+                <ItemCount stock={5} initial={1} producto="Camiseta" onAdd={0}/>
+                <ItemCount stock={10} initial={1} producto="Gorra" onAdd={0}/>
+            </div>
         </>
     )
 }

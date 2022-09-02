@@ -1,0 +1,32 @@
+.itemCount {
+    background-color: #f39608;
+    height: 190px;
+    width: 190px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+
+.controlCantidad {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    width: 150px;
+}
+
+.controlSuma {
+    cursor: pointer;
+    color: blue;
+    height: 15px;
+    width: 15px;
+    border: none;
+}
+.buttonAddCarrito{
+    width: 150px;
+    color: blue;
+    background-color: white;
+    border-color: blue;
+    margin: 5px;
+}
