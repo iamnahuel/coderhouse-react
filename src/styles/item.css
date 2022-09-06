@@ -1,0 +1,19 @@
+.card{
+    display: flex;
+    align-items: center;
+}
+
+.contenedorImagen{
+    height: 300px; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.imagen{
+    height: 100%;
+    width: auto;
+  
+}
+.nombreProducto{
+    color:#02236D;
+}

@@ -1,11 +1,13 @@
 .itemCount {
     background-color: #f39608;
-    height: 190px;
-    width: 190px;
-    padding: 15px;
+    height: 140px;
+    width: 290px;
+    padding: 10px;
     margin: 20px;
     border-radius: 10px;
-
+    display: block;
+    text-align: center;
+   
 }
 
 .controlCantidad {
@@ -13,6 +15,7 @@
     display: flex;
     justify-content: space-between;
     margin: 5px;
+    margin-left: 60px;
     width: 150px;
 }
 
