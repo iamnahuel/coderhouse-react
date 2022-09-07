@@ -3,6 +3,7 @@ import '../styles/itemCount.css';
 
 
 function ItemCount({ stock, initial, onAdd }) {
+   
     const [cantidad, setCantidad] = React.useState(initial);
     const [itemStock, setStock] = React.useState(stock);
     const [itemAdd, setItemAdd] = React.useState(onAdd);
@@ -29,7 +30,6 @@ function ItemCount({ stock, initial, onAdd }) {
     return (
         <>
             <div className="itemCount">
-                <h7>Disponible: {itemStock}</h7>
                 <div className="controlCantidad">
                     <input type="button" className="controlSuma" onClick={Resta} value={"-"} />
                     {cantidad}

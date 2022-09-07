@@ -13,7 +13,7 @@ const ItemListContainer = () => {
     useEffect(() => {
 
         const productos = [
-            {id:1, stock:30, nombre:"Gorra", descripcion:"Gorra original con los colores del club", imagen:"https://image.spreadshirtmedia.net/image-server/v1/mp/products/T15A13PA5514PT32X16Y2D183353307W4692H4678/views/1,width=800,height=800,appearanceId=13,backgroundColor=F2F2F2,modelId=4466,crop=detail/dibujo-de-pelota-de-futbol-gorra-beisbol.jpg", precio:2500},
+            {id:1, stock:30, nombre:"Gorra", descripcion:"Gorra original con los colores del club", imagen:"src/images/gorra.jpg", precio:2500},
             {id:2, stock:20, nombre:"Camiseta Suplente", descripcion:"Camiseta alternativa Deportivo Rolon", imagen:"https://www.thefutbolstore.com.ar/uploads/v2/product/hi/TS1703_471_A.jpg", precio:6000},
             {id:3, stock:15, nombre:"Camiseta Titular", descripcion:"Camiseta titular Deportivo Rolon", imagen:"https://www.dhresource.com/0x0/f2/albu/g19/M01/32/84/rBVap2EWANWAGnJFAAN3jGb8ikQ557.jpg/kits-de-f-tbol-para-ni-os-y-adultos-conjunto.jpg", precio:9000},
             {id:4, stock:30, nombre:"Campera Verano", descripcion:"Campera entrenamiento verano", imagen:"https://cdn.solodeportes.com.ar/media/catalog/product/cache/7c4f9b393f0b8cb75f2b74fe5e9e52aa/c/a/campera-de-futbol-adidas-squadra-21-azul-100020gp6466001-1.jpg", precio:9800},

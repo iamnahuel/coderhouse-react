@@ -1,0 +1,19 @@
+.tarjetaContenedor{
+    border: solid 2px #2e82ff;
+    border-radius: 10px;
+    height: 300px;
+    width: 600px;
+    display: flex;
+    padding: 5px;
+    margin: 10px;
+   
+}
+.contenedorImagen{
+    height: 250px;
+    
+}
+.detallesProducto{
+    display: block;
+    align-items: center;
+    text-align: center;
+}
