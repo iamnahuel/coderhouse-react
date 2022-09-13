@@ -3,7 +3,7 @@ import ItemCount from "./ItemCount";
 import "../styles/itemDetail.css";
 
 const ItemDetail = ({ items }) => {
-    console.log({ items });
+     // console.log(items);
     return (
         <div className="tarjetaContenedor">
             <div className="contenedorImagen">
