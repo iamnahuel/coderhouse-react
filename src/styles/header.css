@@ -49,10 +49,13 @@
 .carrito{
     width: 40px;
     height: 40px;
-    margin-left: 80%;
+    margin-left: 70%;
 }
 .carrito:hover{
     background-color: #f39608;
     border-radius: 100%;
     cursor: pointer;
+}
+.cartWidget{
+    margin-left: 70%;
 }
