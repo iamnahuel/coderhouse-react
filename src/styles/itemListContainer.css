@@ -1,12 +1,24 @@
-.productos{
+.productos {
     display: flex;
-    
+
 }
-.categoria{
+
+.categoria {
     display: flex;
     margin: 15px;
-    
+  align-items: center;
 }
-.btnCategoria{
-    margin-left: 5px;
+
+.tituloCategorias {
+    color: black;
+    font-family: Helvetica;
+    margin-right: 10px;
+}
+
+.genero {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #003290;
+    
 }

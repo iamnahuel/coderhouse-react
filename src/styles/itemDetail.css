@@ -1,19 +1,48 @@
 .tarjetaContenedor{
-    border: solid 2px #2e82ff;
-    border-radius: 10px;
-    height: 300px;
+    background-color: white;
+    height: 370px;
     width: 600px;
     display: flex;
+    align-items: center;
     padding: 5px;
     margin: 10px;
    
 }
+.nombreArticulo{
+    font-family: Arial;
+    color: #02236D;
+    font-weight: bold;
+}
 .contenedorImagen{
     height: 250px;
-    
+    width: 350px;
 }
 .detallesProducto{
     display: block;
     align-items: center;
-    text-align: center;
+    text-align:start;
 }
+
+.generoCategoria{
+    color: gray;
+    display: flex;
+    
+}
+.descuento{
+    color: #989898;
+    text-decoration:line-through;
+    font-family: Tahoma;
+    display: flex;
+}
+
+.precioDescuento{
+ display: flex;
+ align-items: center;
+ 
+}
+.descuentoAplicado{
+    font-family: Helvetica;
+    color: #00A650;
+    margin-left: 10px;
+}
+

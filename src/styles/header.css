@@ -46,16 +46,41 @@
 .nav-item:hover {
     background-color: #f39608;
 }
-.carrito{
-    width: 40px;
-    height: 40px;
-    margin-left: 70%;
-}
-.carrito:hover{
+/*Estilos iconos carrito y basura*/
+.btnCartIcon{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    border-radius: 10px;
     background-color: #f39608;
-    border-radius: 100%;
-    cursor: pointer;
+    margin: 5px;
+    border: none;
 }
+.carrito{
+    height: 25px;
+}
+
 .cartWidget{
-    margin-left: 70%;
+    margin-left: auto;
+}
+.iconosCart{
+    display: flex;
+}
+/*Estilos carrito*/
+.contenedorCarrito{
+    background-color: white;
+    border: solid 0.5px #666666;
+    margin: 15px;
+    border-radius: 3px;
+    text-align: center;
+   }
+.titulosCarritoVacio{
+    display: block;
+    color: #666666;
+    padding: 30px;
+}
+.btnContinuarCompra{
+    margin-right: 15px;
+    display: block;
+    text-align: end
 }

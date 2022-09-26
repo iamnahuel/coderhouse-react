@@ -1,35 +1,55 @@
 .itemCount {
-    background-color: #2e82ff;
+    background-color: white;
     height: 110px;
     width: 290px;
     padding: 10px;
     margin: 20px;
-    border-radius: 10px;
     display: block;
     text-align: center;
-   
+}
+
+.buttonAddCarrito {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #2e82ff;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.cantidadProductosSeleccionados {
+    background-color: white;
+    border: solid 1px black;
+    width: 100px;
+    height: 30px;
+}
+
+.btnResta {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.btnSuma {
+    width: 30px;
+    height: 30px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    border: none;
 }
 
 .controlCantidad {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    margin-left: 60px;
-    width: 150px;
-}
+    display: inline-flex;
+    align-items: center;
 
-.controlSuma {
-    cursor: pointer;
-    color: blue;
-    height: 15px;
-    width: 15px;
-    border: none;
-}
-.buttonAddCarrito{
-    width: 150px;
-    color: blue;
-    background-color: white;
-    border-color: blue;
-    margin: 5px;
 }

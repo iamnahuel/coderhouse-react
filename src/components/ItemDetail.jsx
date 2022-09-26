@@ -21,12 +21,16 @@ const ItemDetail = ({ items }) => {
             </div>
             <div className="detallesProducto">
                 <div className="">
-                    <h1>{items.nombre}</h1>
-                    <h6>{items.descripcion}</h6>
-                    <h4>Precio ${items.precio}</h4>
-                    <h6>Cantidad disponliles: {items.stock}</h6>
+                    <h2 className="nombreArticulo">{items.nombre}</h2>
+                    <h4>{items.descripcion}</h4>
+                    <h4 className="descuento">${items.precio * 1.1}</h4>
+                    <div className="precioDescuento">
+                        <h3>Precio ${items.precio}</h3>
+                        <h6 className="descuentoAplicado">%10 OFF</h6>
+                    </div>
+                    <div className="generoCategoria"><h6># {items.categoria} | {items.stock} unidades disponibles</h6></div>
                 </div>
-                <ItemCount stock={items.stock} initial={1} onAdd={onAdd} counter={counter} setCounter={setCounter} item={items}/>
+                <ItemCount stock={items.stock} initial={1} onAdd={onAdd} counter={counter} setCounter={setCounter} item={items} />
             </div>
         </div>
     )

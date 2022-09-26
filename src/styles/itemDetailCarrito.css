@@ -1,0 +1,12 @@
+.detallesCarrito{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    margin: 15px;
+    padding-bottom: 15px;
+}
+.imagenCarrito{
+    height: 70px;
+    width: 70px;
+}

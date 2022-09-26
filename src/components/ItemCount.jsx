@@ -2,13 +2,14 @@ import * as React from "react";
 import { useContext, useState } from "react";
 import '../styles/itemCount.css';
 import { CartContext } from "./Context/Context"
+import { Link } from "react-router-dom";
 //import Provider from './components/Context/Context';
 
 
 
 function ItemCount(props) { //function ItemCount({ stock, initial, onAdd, items }) {
     //usamos el contexto
-    const { cart, setCart, addItem } = useContext(CartContext);
+    const { addItem, estadoBtn } = useContext(CartContext);
 
     //estado de cantidad de productos a agregar
     const [counter, setCounter] = useState(props.initial);
@@ -31,7 +32,7 @@ function ItemCount(props) { //function ItemCount({ stock, initial, onAdd, items 
         if (counter <= itemStock) {
             addItem(props.item, counter);
             setItemStock(itemStock - counter)
-           
+
         }
     }
 
@@ -40,11 +41,18 @@ function ItemCount(props) { //function ItemCount({ stock, initial, onAdd, items 
         <>
             <div className="itemCount">
                 <div className="controlCantidad">
-                    <input type="button" className="controlSuma" onClick={Resta} value={"-"} />
-                    {counter}
-                    <input type="button" onClick={Suma} className="controlSuma" value={"+"} />
+                    <div className="cantidadProductosSeleccionados">{counter}</div>
+                    <input type="button" className="btnResta" onClick={Resta} value={"-"} />
+                    <input type="button" className="btnSuma" onClick={Suma} value={"+"} />
                 </div>
-                <input type="button" className="buttonAddCarrito" onClick={AgregarProductos} value={"Agregar al carrito"} />
+
+                {estadoBtn === false ?
+                    <input type="button" className="buttonAddCarrito" onClick={AgregarProductos} value={"Agregar al carrito"} />
+                    :
+                    <Link to={"/productos"}>
+                        <input type="button" className="buttonAddCarrito" value={"Ver mas productos"} />
+                    </Link>
+                }
 
             </div>
         </>
