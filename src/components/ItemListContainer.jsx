@@ -1,36 +1,24 @@
 import React, { useState } from "react";
-//import ItemCount from "./ItemCount";
+import { getFirestore, getDocs, collection, query, where } from "firebase/firestore";
 import "../styles/itemListContainer.css";
 import ItemList from "./ItemList";
 import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Productos  from "./Productos";
+
 
 const ItemListContainer = () => {
     const { genero, userId } = useParams();
     const [items, setItems] = useState([]);
     useEffect(() => {
-        const productos = Productos;
-
-        const getProductos = new Promise((resolve) => {
-            let producto;
-           // console.log(genero);
-            if (genero === "masculino") {
-                producto = productos.filter(producto => producto.categoria === "masculino");
-            } else if (genero === "femenino") {
-                producto = productos.filter(producto => producto.categoria === "femenino");
-            } else {
-                producto = productos.filter(producto => producto);
-            }
-            setTimeout(() => {
-                resolve(producto);
-            }, 2000);
+       
+        const db = getFirestore();
+        const itemsCollection = collection(db, "items");
+        const queryItems = genero ? query(itemsCollection, where("categoria", "==", genero)) : itemsCollection;
+        getDocs(queryItems).then((snapShot) => {
+            setItems(snapShot.docs.map(items => ({ id: items.id, ...items.data() })))
         });
 
-        getProductos.then((respuesta) => {
-            setItems(respuesta);
-        });
     }, [genero, userId]);
 
 

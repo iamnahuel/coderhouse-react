@@ -14,10 +14,10 @@ const Provider = ({ children }) => {
 
     //eliminar producto del carrito
     const deletProducto = (e) => {
-        let p = cart.indexOf(x => x.id === e.item.id);
-        cart.splice(p, 1)
+        let w = cart.find(x => x.id === e.item.id)
+        let p = cart.indexOf(w);
+        cart.splice(p, 1);
         calcularMonto();
-        console.log(e);
     }
 
     //funcion agregar producto al carrito
@@ -55,30 +55,26 @@ const Provider = ({ children }) => {
 
     }
 
-
     //calcular monto final de la compra
     const calcularMonto = () => {
         let p = 0;
-        {
-            cart.map(item => (
-                p = p + (item.precio * item.cantidad)
-            ))
-        }
+        cart.map(item => (
+            p = p + (item.precio * item.cantidad)
+        ))
         setMonto(p);
     }
+    
     //funcion para ver que renderizar en carrito
     const estadoCarrito = () => {
-        if (cart.length == 0) {
-           setEstado(false)
+        if (cart.length === 0) {
+            setEstado(false)
         } else {
-           setEstado(true)
+            setEstado(true)
         }
     }
     //funcion para ver que boton renderizar en itemCount
     const estadoBtnItemCount = () => {
-      
-            setEstadoBtn(true)
-          
+        setEstadoBtn(true)
     }
     const estadoBtnItemCountT = () => {
         setEstadoBtn(false)

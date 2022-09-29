@@ -1,16 +1,14 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext} from "react";
 import { Link } from "react-router-dom";
 import ItemDetailCarrito from "./ItemDetailCarrito";
 import { CartContext } from "./Context/Context"
 
 const Cart = () => {
 
-    const { estado, cart, montoFinal, calcularMonto, estadoCarrito } = useContext(CartContext);
+    const { estado, montoFinal, calcularMonto, estadoCarrito } = useContext(CartContext);
     calcularMonto();
     estadoCarrito();
-   // const [estadoCarrito, setEstadoCarrito] = useState();
-
-
+  
     return (
         <div className="contenedorCarrito">
            {estado === false ? 

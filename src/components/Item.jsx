@@ -3,10 +3,6 @@ import { useContext } from "react";
 import "../styles/item.css";
 import { Link } from "react-router-dom";
 import { CartContext } from "./Context/Context"
-
-
-
-
 const Item = ({ nombre, precio, imagen, id }) => {
 
     const { estadoBtnItemCountT} = useContext(CartContext);
