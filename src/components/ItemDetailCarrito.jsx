@@ -7,7 +7,7 @@ const ItemDetailCarrito = () => {
     const { cart, deletProducto } = useContext(CartContext);
     const [items, setItems] = useState([]);
     const [effect, setUe] = useState(0);
- 
+
 
     useEffect(() => {
         const productos = cart;
@@ -19,7 +19,6 @@ const ItemDetailCarrito = () => {
         getProductos.then((respuesta) => {
             setItems(respuesta);
         });
-        console.log("paso.aa..");
     }, [effect]);
 
 

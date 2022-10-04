@@ -20,6 +20,18 @@
     font-weight: bold;
     font-size: medium;
 }
+.buttonLimpiarCarrito{
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: red;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: medium;
+    }
 
 .cantidadProductosSeleccionados {
     background-color: white;
